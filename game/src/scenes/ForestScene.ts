@@ -103,7 +103,7 @@ export class ForestScene {
       this.cycle.update(dt);
       this.handleEnemies(dt);
       this.handleCameraShake(dt);
-      this.updateChopping(dt);
+      this.chopping.update(dt);
 
       const inv = this.inventory.update(this.camera.position);
 
